@@ -26,6 +26,7 @@ h1 {
   padding: 200px 0 0 20%;
   text-shadow: -3px 3px 2px #bcf5a9;
   animation: titre ease 3.5s;
+  /* J'appelle le keyframe titre */
 }
 
 @keyframes titre {
@@ -37,4 +38,38 @@ h1 {
     opacity: 1;
     transform: translateY(0px);
   }
+  /* Il part à 0% d'une opacité de 0 et de 180px plus bas, 
+  puis l'opacity monte jusqu'à 1 tout en remontant de 180px en 3.5 secondes */
+}
+
+/* ********************** LEFT PART ******************* */
+
+#leftPart {
+  background-color: #bcf5a9;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.elements {
+  padding: 70px 0;
+}
+
+.elements img {
+  border-radius: 50%;
+  width: 200px;
+}
+
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  /* permet d'imposer un maximum de 4 lignes pour les pragraphes, le reste étant caché */
+  padding-right: 20px;
+}
+
+.elements .button {
+  text-align: right;
+  margin: 15px 4% 0 0;
 }
