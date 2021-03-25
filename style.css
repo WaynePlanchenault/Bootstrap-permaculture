@@ -6,12 +6,23 @@ html {
 h2,
 h3,
 h4,
+#transition,
 .nav-item,
 footer {
   text-align: center;
 }
 
 /* ***************** HEADER  ***************** */
+
+.collapse {
+  margin-left: 4%;
+}
+
+.nav-item {
+  color: darkslategray;
+  font-weight: bold;
+  padding-right: 45px;
+}
 
 header {
   background: url(./media/main.jpg) no-repeat 50% 50%;
@@ -114,7 +125,6 @@ h1 {
 }
 
 #transition img {
-  margin: 0 15%;
   animation: rateau ease 12s;
   animation-iteration-count: infinite;
   transform-origin: 50% 50%;
