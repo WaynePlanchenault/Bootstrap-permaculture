@@ -36,7 +36,7 @@ h1 {
   font-size: 5em;
   padding: 200px 0 0 20%;
   text-shadow: -3px 3px 2px #bcf5a9;
-  animation: titre ease 3.5s;
+  animation: titre ease 5s;
   /* J'appelle le keyframe titre */
 }
 
@@ -50,7 +50,7 @@ h1 {
     transform: translateY(0px);
   }
   /* Il part à 0% d'une opacité de 0 et de 180px plus bas, 
-  puis l'opacity monte jusqu'à 1 tout en remontant de 180px en 3.5 secondes */
+  puis l'opacity monte jusqu'à 1 tout en remontant de 180px en 5 secondes */
 }
 
 /* ********************** LEFT PART ******************* */
@@ -193,4 +193,55 @@ h1 {
 footer {
   background-color: #bcf5a9;
   padding: 15px 0 4px 0;
+}
+
+/* **************** MEDIA QUERIES ************ */
+
+@media screen and (max-width: 990px) {
+  #rightPart {
+    display: flex;
+  }
+  #rightPart h2 {
+    display: none;
+  }
+  .tips {
+    height: 130px;
+    width: 130px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  h1 {
+    font-size: 3em;
+  }
+  .elements {
+    padding: 30px 0;
+  }
+  .elements img {
+    max-width: 140px;
+    margin-top: 40px;
+  }
+  #transition img {
+    width: 250px;
+  }
+  .tips {
+    height: 90px;
+    width: 90px;
+  }
+  .tips h4 {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .elements {
+    padding: 15px 0;
+    text-align: center;
+  }
+  .elements img {
+    margin-bottom: 10px;
+  }
+  nav {
+    display: none !important;
+  }
 }
